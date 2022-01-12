@@ -79,6 +79,9 @@ cd IGS/IGS-Software-Manager
 # Install the project requirements
 pip install -r requirements.txt
 
+# Create a superuser
+python3 manage.py createsuperuser
+
 # Run the project
 python3 manage.py runserver
 
@@ -104,14 +107,14 @@ pip install -r requirements.txt
 # docker-compose up
 docker-compose up --build -d
 
+# Create a superuser
+docker exec -it igs_web_1 /bin/bash
+python3 manage.py createsuperuser
+
 # The server will initialize in the <http://localhost:8000>
 # The list of employees in the <http://localhost:8000/employee/>
 # The admin system in the <http://localhost:8000/igs/>
 ```
-
-username: user
-
-password: user
 
 ## License ##
 

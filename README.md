@@ -113,6 +113,24 @@ python3 manage.py createsuperuser
 # The admin system in the <http://localhost:8000/igs/>
 ```
 
+To deploy
+```bash
+# build the new image
+docker build -t image_name .
+
+# list all images to get the new IMAGE ID
+docker images
+
+# tag the new image
+docker tag IMAGE_ID anolivei/igs:latest
+
+# push the new image to dockerhub
+docker push anolivei/igs:latest
+
+# run
+docker run -p 8000:8000 -d anolivei/igs:latest -v ./IGS-Software-Manager/db.sqlite3:/app/db.sqlite3
+```
+
 ## License ##
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE) file.

@@ -4,6 +4,8 @@ version: '3'
 services:
   web:
     build: .
+    # or take the image from dockerhub
+    # image: anolivei/igs:latest
     command: ./entrypoint.sh
     volumes:
       - ./IGS-Software-Manager:/app

@@ -1,3 +1,15 @@
 from django.contrib import admin
+from igs.employee.models import Employee
 
-# Register your models here.
+class Employees(admin.ModelAdmin):
+    list_display = (
+                    'id',
+                    'name',
+                    'email',
+                    'department'
+                    )
+    list_display_links = ('id', 'name')
+    search_fields = ('name', )
+    list_per_page = 20
+
+admin.site.register(Employee, Employees)

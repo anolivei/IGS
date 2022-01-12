@@ -27,7 +27,20 @@
 
 ## About ##
 
-Describe your project
+The purpose of this coding test is to evaluate my skills using Python
+and the Django web framework.
+
+The problem:
+
+The IGS team is growing every month and now they need to have some applications
+to manage employee information, such as name, e-mail and department.
+As any application written at IGS, It must have an API to allow integrations.
+
+Deliverables
+"IGS-Software Manager" app must have:
+● A django admin panel to manage employees's data.
+● A Django API to list, add and remove employees.
+● the code should be delivered to a github.com repository.
 
 ## Features ##
 
@@ -55,17 +68,16 @@ git clone https://github.com/anolivei/IGS_Django_Coding_Test
 # Access
 cd IGS_Django_Coding_Test
 
-# Install Django
-python -m pip install Django
-
+# Install the project requirements
+pip install -r requirements.txt
 
 # Run the project
-
+python3 manage.py runserver
 
 # The server will initialize in the <http://localhost:8000>
 ```
 
-## :memo: License ##
+## License ##
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE) file.
 

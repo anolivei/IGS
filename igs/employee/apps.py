@@ -5,4 +5,3 @@ class CoreConfig(AppConfig):
 class EmployeeConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'employee'
-

@@ -16,8 +16,9 @@
 </p>
 
 <p align="center">
-  <a href="#about">About</a> &#xa0; | &#xa0; 
-  <a href="#features">Features</a> &#xa0; | &#xa0;
+  <a href="#about">About</a> &#xa0; | &#xa0;
+  <a href="#about">Problem</a> &#xa0; | &#xa0;
+  <a href="#about">Deliverables</a> &#xa0; | &#xa0;
   <a href="#technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#starting">Starting</a> &#xa0; | &#xa0;
@@ -32,13 +33,14 @@
 The purpose of this coding test is to evaluate my skills using Python
 and the Django web framework.
 
-The problem:
+## Problem ##
 
 The IGS team is growing every month and now they need to have some applications
 to manage employee information, such as name, e-mail and department.
 As any application written at IGS, It must have an API to allow integrations.
 
-Deliverables
+## Deliverables ##
+
 "IGS-Software Manager" app must have:
 
 ● A django admin panel to manage employees's data.
@@ -47,12 +49,6 @@ Deliverables
 
 ● the code should be delivered to a github.com repository.
 
-## Features ##
-
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
-
 ## Technologies ##
 
 The following tools were used in this project:
@@ -60,13 +56,40 @@ The following tools were used in this project:
 - [Django](https://www.djangoproject.com/)
 - [Django REST framework](https://www.django-rest-framework.org/)
 - [Python](https://www.python.org/)
+- [Docker](https://www.docker.com/)
 
 ## Requirements ##
 
-Before starting, you need to have [Git](https://git-scm.com) and [Python 3.9](https://www.python.org/).
+Before starting, you need to have [Git](https://git-scm.com) and ([Python 3.9.5](https://www.python.org/) or [docker](https://www.docker.com/)) installed.
 ## Starting ##
 
+You can start this project in two ways:
+
+First way ([Python 3.9.5](https://www.python.org/) required)
+
 ```bash
+# Install Python 3.9.5 and pip
+
+# Clone this project
+git clone https://github.com/anolivei/IGS
+
+# Access
+cd IGS/IGS-Software-Manager
+
+# Install the project requirements
+pip install -r requirements.txt
+
+# Run the project
+python3 manage.py runserver
+
+# The server will initialize in the <http://localhost:8000>
+```
+
+Second way ([Docker](https://docs.docker.com/get-started/) and [docker-compose](https://docs.docker.com/compose/install/) required)
+
+```bash
+# Install Docker and docker-compose
+
 # Clone this project
 git clone https://github.com/anolivei/IGS
 
@@ -76,14 +99,15 @@ cd IGS
 # Install the project requirements
 pip install -r requirements.txt
 
-# Create a superuser
-python3 manage.py createsuperuser
-
-# Run the project
-python3 manage.py runserver
+# docker-compose up
+docker-compose up --build -d
 
 # The server will initialize in the <http://localhost:8000>
 ```
+
+username: user
+
+password: user
 
 ## License ##
 

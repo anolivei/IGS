@@ -128,7 +128,7 @@ docker tag IMAGE_ID anolivei/igs:latest
 docker push anolivei/igs:latest
 
 # run
-docker run -p 8000:8000 -d anolivei/igs:latest -v ./IGS-Software-Manager/db.sqlite3:/app/db.sqlite3
+docker run -v /host_complete_path/IGS-Software-Manager/db.sqlite3:/app/db.sqlite3  -p 8000:8000 -d anolivei/igs:latest
 ```
 
 ## License ##

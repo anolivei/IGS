@@ -83,6 +83,8 @@ pip install -r requirements.txt
 python3 manage.py runserver
 
 # The server will initialize in the <http://localhost:8000>
+# The list of employees in the <http://localhost:8000/employee/>
+# The admin system in the <http://localhost:8000/igs/>
 ```
 
 Second way ([Docker](https://docs.docker.com/get-started/) and [docker-compose](https://docs.docker.com/compose/install/) required)
@@ -103,6 +105,8 @@ pip install -r requirements.txt
 docker-compose up --build -d
 
 # The server will initialize in the <http://localhost:8000>
+# The list of employees in the <http://localhost:8000/employee/>
+# The admin system in the <http://localhost:8000/igs/>
 ```
 
 username: user

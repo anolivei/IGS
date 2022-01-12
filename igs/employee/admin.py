@@ -10,7 +10,7 @@ class Employees(admin.ModelAdmin):
                     'department'
                     )
     list_display_links = ('id', 'name')
-    search_fields = ('name', )
+    search_fields = ('name',)
     list_per_page = 20
 
 

@@ -79,7 +79,7 @@ cd IGS/IGS-Software-Manager
 # Install the project requirements
 pip install -r requirements.txt
 
-# Create a superuser
+# Create your superuser (or use username: user | password: user) to login
 python3 manage.py createsuperuser
 
 # Run the project
@@ -104,7 +104,7 @@ cd IGS
 # docker-compose up
 docker-compose up --build -d
 
-# Create a superuser
+# Create your superuser (or use username: user | password: user) to login
 docker exec -it igs_web_1 /bin/bash
 python3 manage.py createsuperuser
 

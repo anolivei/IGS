@@ -101,9 +101,6 @@ git clone https://github.com/anolivei/IGS
 # Access
 cd IGS
 
-# Install the project requirements
-pip install -r requirements.txt
-
 # docker-compose up
 docker-compose up --build -d
 

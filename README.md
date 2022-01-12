@@ -3,13 +3,15 @@
 <h1 align="center">IGS Django Coding Test</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/anolivei/IGS_Django_Coding_Test?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/anolivei/IGS_Django_Coding_Test?color=3de069">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/anolivei/IGS_Django_Coding_Test?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/anolivei/IGS_Django_Coding_Test?color=3de069">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/anolivei/IGS_Django_Coding_Test?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/anolivei/IGS_Django_Coding_Test?color=3de069">
 
-  <img alt="License" src="https://img.shields.io/github/license/anolivei/IGS_Django_Coding_Test?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/anolivei/IGS_Django_Coding_Test?color=3de069">
+
+  <img alt="Pep8" src="https://github.com/anolivei/IGS_Django_Coding_Test/actions/workflows/pep8.yml/badge.svg?event=push">
 
 </p>
 
@@ -70,6 +72,9 @@ cd IGS_Django_Coding_Test
 
 # Install the project requirements
 pip install -r requirements.txt
+
+# Create a superuser
+python3 manage.py createsuperuser
 
 # Run the project
 python3 manage.py runserver

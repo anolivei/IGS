@@ -1,0 +1,12 @@
+
+version: '3'
+
+services:
+  web:
+    build: .
+    command: ./entrypoint.sh
+    volumes:
+      - ./IGS-Software-Manager:/code
+      - ./IGS-Software-Manager/db.sqlite3:/db.sqlite3
+    ports:
+      - "8000:8000"

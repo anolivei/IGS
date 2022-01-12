@@ -40,8 +40,11 @@ As any application written at IGS, It must have an API to allow integrations.
 
 Deliverables
 "IGS-Software Manager" app must have:
+
 ● A django admin panel to manage employees's data.
+
 ● A Django API to list, add and remove employees.
+
 ● the code should be delivered to a github.com repository.
 
 ## Features ##

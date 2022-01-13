@@ -35,6 +35,8 @@ and the Django web framework.
 
 It is running in http://64.227.19.168/employee/
 
+username:user | password: user
+
 ## Problem ##
 
 The IGS team is growing every month and now they need to have some applications
